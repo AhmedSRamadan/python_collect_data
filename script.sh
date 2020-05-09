@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export DOCKER_HOST=127.0.0.1
-
 sudo yum update -y
 
 sudo yum remove docker \
@@ -19,7 +17,7 @@ sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
 
-sudo yum-config-manager --enable docker-ce-nightly
+sudo yum-config-manager --disable docker-ce-nightly
 
 sudo yum install -y docker-ce docker-ce-cli containerd.io
 
