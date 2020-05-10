@@ -38,6 +38,6 @@ git clone https://github.com/AhmedSRamadan/python_collect_data.git
 
 cd ./python_collect_data
 
-docker-compose build .
+docker-compose build 
 
-sudo service docker start && docker-compose up -d
+docker-compose up -d
